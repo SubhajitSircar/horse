@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba139cb2fe470db419928b91dc35516e, type: 3}
+  m_Name: Horse_09_GoldenCrown
+  m_EditorClassIdentifier: 
+  horseID: 9
+  horseName: Golden Crown
+  horseSprite: {fileID: 0}
+  speed: 82.81384
+  stamina: 95.63392
+  acceleration: 71.36817
+  wisdom: 90.92926
+  preferredSurface: Turf
+  ultimateName: Regal Pace
+  ultimateType: 1

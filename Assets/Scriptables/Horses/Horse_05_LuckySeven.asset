@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba139cb2fe470db419928b91dc35516e, type: 3}
+  m_Name: Horse_05_LuckySeven
+  m_EditorClassIdentifier: 
+  horseID: 5
+  horseName: Lucky Seven
+  horseSprite: {fileID: 0}
+  speed: 86.23183
+  stamina: 87.26857
+  acceleration: 79.541336
+  wisdom: 73.73818
+  preferredSurface: Turf
+  ultimateName: Seven's Grace
+  ultimateType: 3

@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba139cb2fe470db419928b91dc35516e, type: 3}
+  m_Name: Horse_04_BlazingComet
+  m_EditorClassIdentifier: 
+  horseID: 4
+  horseName: Blazing Comet
+  horseSprite: {fileID: 0}
+  speed: 84.262634
+  stamina: 78.235214
+  acceleration: 90.94231
+  wisdom: 79.005424
+  preferredSurface: Dirt
+  ultimateName: Solar Flare
+  ultimateType: 0

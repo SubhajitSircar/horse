@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba139cb2fe470db419928b91dc35516e, type: 3}
+  m_Name: Horse_18_IronHoof
+  m_EditorClassIdentifier: 
+  horseID: 18
+  horseName: Iron Hoof
+  horseSprite: {fileID: 0}
+  speed: 87.82724
+  stamina: 90.544205
+  acceleration: 95.36676
+  wisdom: 89.89421
+  preferredSurface: Dirt
+  ultimateName: Tectonic Stride
+  ultimateType: 0

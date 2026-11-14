@@ -1,57 +1,31 @@
-
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
 {
-    [Header("Race Settings")]
-    public Transform horsesParent;
-
-    [Header("Camera Settings")]
-    public float followOffset = 3f;
-    public float smoothTime = 0.25f;
-
-    private float initialCameraX;
-    private float velocityX;
-
-    void Start()
-    {
-        initialCameraX = transform.position.x;
-    }
+    public RaceManager raceManager;
+    public float xOffset = 5f;
+    public float smoothSpeed = 5f;
+    public float minX = -22f;
+    public float maxX = 22f;
 
     void LateUpdate()
     {
-        if (horsesParent == null || horsesParent.childCount == 0)
-            return;
+        if (raceManager == null || raceManager.activeRacers.Count == 0) return;
 
-        // Find the horse currently furthest ahead
-        float leadingHorseX = float.MinValue;
-
-        foreach (Transform horse in horsesParent)
+        float leadX = float.MinValue;
+        foreach (HorseRacer racer in raceManager.activeRacers)
         {
-            if (horse.position.x > leadingHorseX)
+            if (racer != null && racer.CurrentX > leadX)
             {
-                leadingHorseX = horse.position.x;
+                leadX = racer.CurrentX;
             }
         }
 
-        // Keep the leading horse slightly right of screen center
-        float targetX = Mathf.Max(
-            initialCameraX,
-            leadingHorseX - followOffset
-        );
-
-        // Smooth horizontal camera movement
-        float newX = Mathf.SmoothDamp(
-            transform.position.x,
-            targetX,
-            ref velocityX,
-            smoothTime
-        );
-
-        transform.position = new Vector3(
-            newX,
-            transform.position.y,
-            transform.position.z
-        );
+        if (leadX > float.MinValue)
+        {
+            float targetX = Mathf.Clamp(leadX + xOffset, minX, maxX);
+            Vector3 targetPos = new Vector3(targetX, transform.position.y, transform.position.z);
+            transform.position = Vector3.Lerp(transform.position, targetPos, smoothSpeed * Time.deltaTime);
+        }
     }
 }
